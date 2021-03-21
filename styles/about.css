@@ -1,0 +1,6 @@
+@import url('style.css');
+
+.header{
+    height: 8rem;
+    min-height: 2rem;
+}

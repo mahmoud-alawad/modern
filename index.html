@@ -18,20 +18,24 @@
 <title>Moderno</title>
 </head>
 <body>
+  <!-- spinner -->
+  <div class="spinner-wrapper">
+    <div class="spinner" ></div>
+  </div>
    <!-- start header -->
    <header class="header">
       <!-- side menu -->
       <div class="menu">
-        <i class="fas fa-times close-menu"></i>
+        <i class="fas fa-times fa-times-circle fa-spin close-menu"></i>
          <div class="logo">
            <img src="images/Logo.png" alt="logo">
            <h1>MENU</h1>
          </div>
          <ul class="menu-links">
-           <li class="links">Home</li>
-           <li class="links">Services</li>
-           <li class="links">Stories</li>
-           <li class="links">About</li>
+           <li  class="links"> <a href="#">Home</a> </li>
+           <li data-link="services" class="links"> <a>Services</a> </li>
+           <li data-link="stories" class="links"> <a>Stories</a> </li>
+           <li data-link="about" class="links"> <a>About</a> </li>
          </ul>
 
          <div class="social">
@@ -54,6 +58,11 @@
           </svg>
           </div>
         </div>
+        <div class="bg-options">
+          <h4>Random Background</h4>
+          <span class="on ">No</span>
+          <span class="off ">Yes</span>
+        </div>
        </div>
      <div class="container">
        <!-- navbar -->
@@ -73,24 +82,24 @@
        <div class="header-content">
          <h1 class="title"><b>moderno</b></h1>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Qui, excepturi. Lorem ipsum dolor sit amet.</p>
-         <button class="btn">Get in Touch</button>
+         <a href="about.html" class="btn">Get in Touch</a>
        </div>
      </div>
    </header>
    <!-- end header -->
 
    <!-- start services -->
-   <div class="services">
+   <div data-link="services" id="services" class="services">
      <div class="container">
        <!-- cards -->
        <div class="cards">
        <div class="card">
-         <div class="icon pen">
+         <div class="icon">
         <svg 
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         width="41px" height="41px">
-        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+        <path class="icon-services " fill-rule="evenodd"  fill="rgb(250, 105, 78)"
         d="M35.045,7.392 L38.460,10.808 C38.663,11.010 38.766,11.278 38.767,11.553 C38.766,11.831 38.663,12.097 38.457,12.300 L38.460,12.300 L16.714,34.044 L18.148,35.479 L39.894,13.735 C40.494,13.134 40.794,12.338 40.794,11.553 C40.794,10.767 40.494,9.973 39.893,9.374 L31.624,1.108 C31.025,0.506 30.230,0.206 29.444,0.206 C28.659,0.206 27.865,0.506 27.262,1.109 L5.521,22.851 L6.955,24.285 L28.699,2.541 C28.904,2.337 29.167,2.234 29.444,2.233 C29.720,2.234 29.987,2.337 30.191,2.541 L33.610,5.958 L12.987,26.580 L14.421,28.014 L35.045,7.392 ZM4.253,28.421 C3.834,28.009 3.337,27.680 2.679,27.669 C2.165,27.656 1.633,27.954 1.363,28.346 C1.078,28.736 0.962,29.173 0.921,29.640 L0.218,37.832 L0.217,37.831 C0.208,37.916 0.206,38.007 0.206,38.098 C0.202,38.831 0.484,39.527 0.982,40.018 C1.471,40.510 2.163,40.793 2.894,40.793 L2.901,40.793 C2.981,40.793 3.060,40.790 3.141,40.785 L11.363,40.080 C11.829,40.039 12.267,39.921 12.656,39.637 C13.048,39.365 13.344,38.836 13.332,38.322 C13.321,37.663 12.994,37.166 12.580,36.748 L4.253,28.421 ZM2.987,38.763 C2.966,38.763 2.934,38.767 2.901,38.767 C2.453,38.736 2.263,38.546 2.233,38.098 C2.233,38.094 2.230,38.065 2.226,38.014 L2.238,38.014 L2.927,29.962 L11.038,38.075 L2.987,38.763 Z"/>
         </svg>
          </div>
@@ -103,7 +112,7 @@
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           width="38px" height="39px">
-          <path fill-rule="evenodd"  fill="rgb(250, 105, 78)"
+          <path class="icon-services " fill-rule="evenodd"  fill="rgb(250, 105, 78)"
           d="M20.000,28.000 L20.000,25.000 L18.000,25.000 L18.000,28.000 C15.795,28.447 13.756,29.837 13.266,32.026 L-0.000,32.000 L-0.000,34.000 L13.172,33.997 C13.527,36.819 15.928,39.000 18.846,39.000 C21.760,39.000 24.160,36.817 24.514,33.997 L38.000,34.000 L38.000,32.000 L24.420,32.026 C23.908,29.737 22.352,28.343 20.000,28.000 ZM19.000,37.000 C16.928,36.995 15.004,35.069 15.000,33.000 C15.004,30.932 16.928,30.005 19.000,30.000 C21.066,30.005 22.996,30.932 23.000,33.000 C22.996,35.069 21.066,36.995 19.000,37.000 ZM34.812,-0.001 L3.187,-0.001 C1.461,0.004 0.004,1.271 -0.000,3.000 L-0.000,21.000 C0.004,22.726 1.273,23.996 3.000,24.000 L35.000,24.000 C36.727,23.996 37.996,22.726 38.000,21.000 L38.000,3.000 C37.996,1.271 36.539,0.004 34.812,-0.001 ZM35.973,20.731 C35.969,21.360 35.631,21.997 35.000,22.000 L3.000,22.000 C2.369,21.997 2.004,21.629 2.000,21.000 L2.000,3.000 C2.000,2.369 2.557,1.973 3.187,1.970 L34.812,1.973 C35.443,1.973 35.969,2.499 35.973,3.130 L35.969,20.731 L35.973,20.731 Z"/>
          </svg>
          </div>
@@ -112,11 +121,11 @@
        </div>
        <div class="card">
          <div class="icon">
-          <svg 
+          <svg  
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           width="21px" height="42px">
-          <path fill-rule="evenodd"  fill="rgb(250, 105, 78)"
+          <path class="icon-services" fill-rule="evenodd"  fill="rgb(250, 105, 78)"
           d="M20.776,23.371 C20.448,18.016 16.612,13.637 11.636,13.043 L11.636,12.670 C11.589,11.542 10.981,10.567 9.991,10.030 L5.155,7.657 C4.915,7.589 4.515,6.944 4.560,6.700 L4.560,4.856 C4.560,4.692 4.706,4.546 4.870,4.546 L12.413,4.546 L12.413,5.200 C12.417,6.592 13.540,7.714 14.931,7.718 L16.866,7.718 C18.257,7.714 19.382,6.592 19.384,5.200 L19.384,3.265 C19.382,1.875 18.257,0.749 16.866,0.745 L14.931,0.748 C13.745,0.749 12.763,1.569 12.493,2.671 L4.870,2.671 C3.663,2.675 2.686,3.647 2.685,4.856 L2.685,6.700 C2.726,7.830 3.335,8.804 4.329,9.340 L9.163,11.712 C9.403,11.784 9.804,12.426 9.761,12.670 L9.761,13.011 C4.591,13.415 0.563,17.877 0.223,23.371 L-0.000,23.000 L-0.000,38.000 C0.002,40.074 1.924,41.998 4.000,42.000 L17.000,42.000 C19.078,41.998 20.996,40.074 21.000,38.000 L21.000,23.000 L20.776,23.371 ZM14.288,3.265 C14.290,2.917 14.585,2.623 14.931,2.623 L16.866,2.623 C17.212,2.623 17.507,2.917 17.509,3.265 L17.509,5.200 C17.507,5.546 17.212,5.842 16.866,5.842 L14.931,5.843 C14.585,5.842 14.290,5.546 14.288,5.200 L14.288,3.265 ZM11.534,20.932 C11.880,20.932 12.175,21.225 12.175,21.573 L12.175,23.510 C12.175,23.855 11.880,24.149 11.534,24.151 L9.597,24.151 C9.251,24.149 8.956,23.855 8.956,23.510 L8.956,21.573 C8.956,21.225 9.251,20.932 9.597,20.932 L11.534,20.932 ZM19.000,25.000 L19.000,38.000 C18.996,39.031 18.031,39.997 17.000,40.000 L4.000,40.000 C2.969,39.997 2.004,39.031 2.000,38.000 L2.000,25.000 L2.085,25.249 L2.085,24.308 C2.081,24.157 2.073,24.103 2.075,24.103 C2.081,19.212 5.507,15.307 9.761,14.887 L9.761,19.056 L9.597,19.056 C8.206,19.058 7.083,20.181 7.081,21.573 L7.081,23.510 C7.083,24.900 8.206,26.022 9.597,26.027 L11.534,26.026 C12.923,26.022 14.046,24.900 14.050,23.510 L14.050,21.573 C14.046,20.215 12.976,19.122 11.636,19.065 L11.636,14.942 C15.704,15.556 18.921,19.364 18.925,24.103 L18.925,24.103 C18.927,24.103 18.919,24.157 18.915,24.308 L18.915,25.249 L19.000,25.000 Z"/>
          </svg>
          </div>
@@ -129,12 +138,13 @@
    <!-- end services -->
 
    <!-- start gallery -->
-   <section class="stories">
+   <section data-link="stories" id="stories" class="stories">
      <div class="container">
        <h1 class="title">Succes Stories</h1>
        <p>Lorem ipsum dolor sit amet consectetur.</p>
        <div class="card-row">
-         <div class="right"></div>
+         <div class="left">
+         </div>
          <div class="content">
            <i class="fas fa-times "></i>
            <h3>Lorem, ipsum dolor.</h3>
@@ -146,26 +156,34 @@
        <!-- gallery section -->
        <div class="gallery">
          <div class="image-gallery">
-           <div class="plus">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24.656" height="24.63" viewBox="0 0 24.656 24.63">
-              <path id="Plus" class="cls-1" d="M572.849,2184.18v-1.48H561.263v-11.59h-1.48v11.59H548.2v1.48h11.587v11.58h1.479v-11.58h11.586Z" transform="translate(-548.188 -2171.12)"/>
-            </svg>            
-           </div>
+           <img src="images/gallery1.jpg" alt="img-gallery">
          </div>
-         <div class="image-gallery"></div>
-         <div class="image-gallery"></div>
-         <div class="image-gallery"></div>
-         <div class="image-gallery"></div>
-         <div class="image-gallery"></div>
+         <div class="image-gallery">
+           <img src="images/gallery2.jpg" alt="img-gallery">
+         </div>
+         <div class="image-gallery">
+           <img src="images/gallery3.jpg" alt="img-gallery">
+         </div>
+         <div class="image-gallery">
+           <img src="images/gallery4.jpg" alt="img-gallery">
+         </div>
+         <div class="image-gallery">
+           <img src="images/gallery5.jpg" alt="img-gallery">
+         </div>
+         <div class="image-gallery">
+         <img src="images/gallery6.jpg" alt="img-gallery">
+        </div>
        </div>
      </div>
    </section>
    <!-- end gallery -->
    <!-- start who we are -->
-   <section class="who-we-are">
+   <section data-link="about" id="about" class="who-we-are">
      <div class="container">
-       <h1 class="who-we-are-title">Get in Touch</h1>
-       <p>we are communicative and social</p>
+       <div>
+        <h1 class="who-we-are-title">Get in Touch</h1>
+        <p class="about-text">we are communicative and social</p>
+       </div>
        <div class="showcase">
          <div class="box">
            <svg> 
