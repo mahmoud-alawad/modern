@@ -72,7 +72,7 @@ menuItems.forEach((item)=>{
        let windowHight = window.pageYOffset;
        let storiesHight = storiesContainer.offsetHeight; //1212
 
-       if(windowHight + 300 >= storiesHight){
+       if(windowHight + 360 >= storiesHight){
         storiesTitle.classList.add('scale-background');
         cardPhoto.style.minHeight = '40vh';
     
