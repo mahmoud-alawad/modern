@@ -1,0 +1,14 @@
+@import url('style.css');
+@import url('about.css');
+
+.project{
+    background-color:  var(--light-gray);
+}
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-row .illustraion-1{
+    width: 500px;
+    height: 500px;
+}

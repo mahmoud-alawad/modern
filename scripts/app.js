@@ -1,30 +1,17 @@
-// const galleryImage = document.querySelectorAll('.gallery');
 
-// galleryImage.forEach(image =>{
-  
-//     let plus = document.createElement('div');
- 
-
-//     plus.className = 'plus';
- 
-//     image.appendChild(plus);
-
-//   image.addEventListener('click', ()=>{
-//    image.classList.toggle('plus');
-  
-//   console.log(plus);
-//   });
-// });
 const bars = document.querySelector('.bars');
 const closeMenu = document.querySelector('.close-menu');
 const menu = document.querySelector('.menu');
 const header = document.querySelector('.header');
+
 const buttonOn = document.querySelector('.on');
 const buttonOff = document.querySelector('.off');
+
 const spinner = document.querySelector('.spinner');
 const icons = document.querySelectorAll('.icon');
 const servicesPath = document.querySelectorAll('.icon-services');
 const imagesGallery = document.querySelectorAll('.image-gallery');
+
 const storiesContainer = document.querySelector('.stories');
 const storiesTitle = document.querySelector('.stories .title');
 const cardPhoto = document.querySelector('.stories .left');
@@ -67,7 +54,7 @@ menuItems.forEach((item)=>{
     // console.log(header);
     }, 5000);
 
-
+//animation
     window.addEventListener('scroll', function scrollTitle() {
        let windowHight = window.pageYOffset;
        let storiesHight = storiesContainer.offsetHeight; //1212
@@ -76,7 +63,6 @@ menuItems.forEach((item)=>{
         storiesTitle.classList.add('scale-background');
         cardPhoto.style.minHeight = '40vh';
     
-        console.log(cardPhoto.classList);
        }
        
     });
@@ -92,9 +78,31 @@ menuItems.forEach((item)=>{
     imagesGallery.forEach((image)=>{
     image.addEventListener('click', function openPopup() {
         let popUp = document.createElement('div');
+        let pluse = document.createElement('i');
+        pluse.className = 'fas fa-pluse';
         popUp.className = 'popup-gallery';
+        console.log(popUp);
         
-        image.appendChild(popUp);
+
+        popUp.appendChild(pluse);
+        // image.appendChild(popUp);
+        image.classList.toggle('popUp');
         console.log(popUp);
     });
     });
+
+// Create the script tag, set the appropriate attributes
+// var script = document.createElement('script');
+// script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap';
+// script.async = true;
+
+// // Attach your callback function to the `window` object
+// window.initMap = function() {
+//   // JS API is loaded and available
+    
+// };
+
+// // Append the 'script' element to 'head'
+// document.body.appendChild(script);
+
+// 
