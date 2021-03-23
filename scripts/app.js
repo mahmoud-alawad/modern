@@ -105,4 +105,21 @@ menuItems.forEach((item)=>{
 // // Append the 'script' element to 'head'
 // document.body.appendChild(script);
 
-// 
+
+//animate text
+window.addEventListener('load', animate_string);
+
+function animate_string(){
+
+    let stringAnimate = document.getElementById('animate-string');
+    let textNode = stringAnimate.childNodes[0]; // assuming no other children
+    let text = textNode.data + " ";
+
+// console.log(textNode);
+setInterval(function (){
+
+  text = text[text.length - 1 ] + text.substring(0, text.length  - 1);
+  textNode.data = text;
+
+}, 200);
+}

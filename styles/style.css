@@ -559,8 +559,11 @@ color: var(--light-black);
     padding-bottom: 0.4rem;
     text-align: center;
 }
-.who-we-are .about-tex{
+.who-we-are .about-text{
     line-height: 1.4;
+    text-align: center;
+    text-shadow: 0px 2px 15px rgba(100, 91, 91, 0.7);
+    font-style: oblique;
 }
 .who-we-are .showcase{
     margin-top: 1rem;
